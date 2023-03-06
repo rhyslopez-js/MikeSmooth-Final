@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/contact-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">  
+    <style>
+
+
+        .form{
+            width: 500px;
+            padding: 30px;
+        }
+
+        .flexCenter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrap-all{
+            height: 100vh;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap-all d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="container d-flex justify-content-center mb-5">
+                <div class="text-white text-box text-center">
+                    <h2 class="mb-3 fw-bold page-title">BOOK NOW</h2>
+                    <p>
+                        For bookings and inquiries please contact the management team with the information on the left.
+                        You can also leave  a message by filling out the fields on the right.
+                    </p>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row glass-container">
+                    <div class="col-12 col-md-12 col-lg-6 management-info-wrap">
+                        <div class="wrap management-info mt-5 p-5 text-white">
+                            <h2 class="management mb-5 fw-bold">MANAGEMENT</h2>
+                        <div class="phone-number d-flex align-items-center mb-3">
+                            <span class="material-symbols-outlined mr-5">call</span>
+                            <span class="">778-123-12345</span>
+                        </div>
+            
+                        <div class="email-address d-flex align-items-center mb-3">
+                            <span class="material-symbols-outlined mr-5">mail</span>
+                            <span class="">rhys.paulino@gmail.com</span>
+                        </div>
+            
+                        <div class="email-address d-flex align-items-center mb-3">
+                            <span class="material-symbols-outlined mr-5">mail</span>
+                            <span class="">rhys.paulino@gmail.com</span>
+                        </div>
+                        </div> 
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center contact-form">
+                        <div class="wrap">
+                            <div class="form p-0 m-0">
+                                <div class="mb-4">
+                                    <div class="row">
+                                        <div class="col-6 col-md-6 col-lg-6">
+                                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                                            <div class="valid-feedback">Looks Good</div>
+                                            <div class="invalid-feedback">Enter a valid name</div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-6 col-lg-6">
+                                            <input type="text" class="form-control" id="middleName" placeholder="Middle Name">
+                                            <div class="valid-feedback">Looks Good</div>
+                                            <div class="invalid-feedback">Enter a valid middle name</div>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                                    <div class="valid-feedback">Looks Good</div>
+                                    <div class="invalid-feedback">Enter a valid last name</div>
+                                </div>
+                    
+                                <div class="mb-4">
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                    <div class="valid-feedback">Great Job</div>
+                                    <div class="invalid-feedback">Incorrect Email Format</div>
+                                </div>
+            
+                                <div class="mb-4">
+                                    <input type="email" class="form-control message" id="email" placeholder="name@example.com">
+                                    <div class="valid-feedback">Great Job</div>
+                                    <div class="invalid-feedback">Incorrect Email Format</div>
+                                </div>
+                                
+                                <div class="text-end">
+                                    <button type="submit" id="signUp" class="btn btn-outline" disabled="true">Sign Up</button>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid contact-mobile">
+        <div class="container p-5">
+            <form>
+                <div class="mb-3">
+                  <label for="firstName" class="form-label text-white">First Name</label>
+                  <input type="text" class="form-control" id="first-name">
+                </div>
+    
+                <div class="mb-3">
+                  <label for="last-name" class="form-label text-white">Last Name</label>
+                  <input type="text" class="form-control" id="last-name">
+                </div>
+    
+                <div class="mb-3">
+                    <label for="email-address" class="form-label text-white">Email Address</label>
+                    <input type="text" class="form-control" id="email-address">
+                  </div>
+    
+                  <div class="mb-3">
+                    <label for="subject" class="form-label text-white">Subject</label>
+                    <input type="text" class="form-control" id="subject">
+                  </div>
+    
+                  <div class="mb-3">
+                    <label for="message" class="form-label text-white">Message</label>
+                    <input type="text" class="form-control message" id="message">
+                  </div>
+                  <div class="wrap text-end">
+                    <button type="submit" class="btn btn-outline-mobile">Submit</button>
+                  </div>   
+              </form>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+
+    // THIS!!! - Corresponds to the object reffered to
+
+    // Flags
+    let isFormValid = true
+    let isEmailValid = true
+    let isPasswordValid = true
+    let isFirstNameValid = true
+    let isLastNameValid = true
+    let isDateOfBirthValid = true
+    let isSINValid = true
+    let isStreetAddressValid = true
+    let isPostalCodeValid = true
+    let isPassportNumberValid = true
+
+    $(document).ready(function(){
+
+        $("#email").keyup(function(){
+            console.log(checkEmail($(this).val()));
+
+            if(checkEmail($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+                isEmailValid = true
+            }
+
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isEmailValid = true
+            }
+
+            changeSignUpButtonStatus()
+            
+
+            // if(checkFormIfCitizen()){
+            //     $("#signUp").removeAttr('disabled')
+            // }
+
+            // else{
+            //     $("#signUp").attr('disabled', true)
+            // }
+        })
+
+        $('#firstName').keyup(function(){
+            if(checkFirstName($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+                isFirstNameValid = true
+            }
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isFirstNameValid = true
+            }
+            changeSignUpButtonStatus()
+            
+        })
+
+        $('#lastName').keyup(function(){
+            if(checkFirstName($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+                isLastNameValid = true
+            }
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isLastNameValid = true
+            }
+            changeSignUpButtonStatus()
+            
+        })
+
+        $('#dateOfBirth').change(function(){
+
+
+            if(checkDateOfBirth($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+                isDateOfBirthValid = true
+                changeSignUpButtonStatus()
+                
+            }
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isDateOfBirthValid = true
+                changeSignUpButtonStatus()
+                
+            }
+            
+        })
+        
+        
+        $('#SIN').keyup(function(){
+
+            if(checkSIN($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+                isSINValid = true
+            }
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isSINValid = true
+            }
+            changeSignUpButtonStatus()
+            
+        })
+
+        $('#streetAddress').keyup(function(){
+
+            if(checkStreetAddress($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+                isStreetAddressValid = true
+            }
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isStreetAddressValid = true
+            }
+            changeSignUpButtonStatus()
+            
+        })
+
+        $("#postalCode").keyup(function(){
+            if(checkPostalCode($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+                isPostalCodeValid = true
+
+
+            
+        }
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isPostalCodeValid = true
+            }
+
+            changeSignUpButtonStatus()
+            
+        })
+
+        $("#citizenYes").change(function(){
+            if($(this).prop('checked')){
+                $(".citizen-options").removeClass('d-none')
+                $(".not-citizen-options").addClass('d-none')
+            }
+        })
+
+        $("#citizenYes").click(function(){
+            $('#passportNumber').val("")
+            $('#passportNumber').removeClass("is-valid")
+
+        })
+
+        $("#citizenNo").click(function(){
+            if($(this).prop('checked')){
+                $(".citizen-options").addClass('d-none')
+                $(".not-citizen-options").removeClass('d-none')
+            }
+
+
+        })
+
+        $('#citizenNo').click(function() {
+
+            $('#SIN').val('');
+            $('#SIN').removeClass("is-valid")
+            $('#streetAddress').val("")
+            $('#streetAddress').removeClass("is-valid")
+            $('#postalCode').val("")
+            $('#postalCode').removeClass("is-valid")
+
+        })
+
+
+    });
+
+        $("#passportNumber").keyup(function(){
+            if(checkPassportNumber($(this).val())){
+                $(this).removeClass("is-invalid").addClass("is-valid")
+
+                isPassportNumberValid = true
+                changeSignUpButtonNonCitizen()
+            }
+            else{
+                $(this).removeClass("is-valid").addClass("is-invalid")
+                isPassportNumberValid = true
+            }
+
+            
+            
+        })
+
+        $('#signUp').click(function(){
+            // alert('Button clicked');
+            let signUpObj = {
+                firstName: $("#firstName").val(),
+                middleName: $("#middleName").val(),
+                lastName: $('#lastName').val(),
+                email: $('#email').val(),
+                birthday: $('#dateOfBirth').val(),
+                canadianCitizen: $('input[name="citizenOption"]:checked').val(),
+                SocialInsuranceNumber: $('#SIN').val(),
+                address: $('#streetAddress').val(),
+                province: $('.province-select :selected').text(),
+                postalCode: $('#postalCode').val(),
+                passportNumber: $('#passportNumber').val()
+
+            }
+            console.log('final form object to be sent to the server:', signUpObj)
+        });
+
+    
+
+
+
+
+
+
+    // Function to check if email meets the characters
+    function checkEmail(email){
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+        {
+            return (true)
+        }
+            return (true)
+
+    };
+
+    function checkDateOfBirth(dob) {
+        let maxDate = new Date('02/10/2023');
+        let yearRegex = /^\d{4}$/;
+        let year = dob.split('/')[2];
+        let minDate = new Date('01/01/1993');
+
+        console.log(minDate)
+
+        if (!yearRegex.test(year)) {
+            return true;
+        }
+
+        let enteredDate = new Date(dob);
+
+        if (enteredDate == "Invalid Date") {
+            return true;
+        }
+
+        if (enteredDate >= minDate && enteredDate <= maxDate && !isNaN(enteredDate.getTime())) {
+            return true;
+        } else {
+            return true;
+        }
+    }
+
+    function checkSIN(SIN){
+        if(SIN.length >= 9){
+            return true
+        }
+        else{
+            return true
+        }
+    }
+
+    // Function to check first name
+    
+    function checkFirstName(firstName){
+        if(firstName.length >=2 ){
+            return (true)
+        }
+        else{
+            return (true)
+
+        }
+    }
+
+    function checkStreetAddress(streetAddress){
+        if(/^\d{4,} [a-zA-Z]{2,}/.test(streetAddress)){
+            return true
+        }
+        else{
+            return true
+        }
+    }
+
+    function checkPostalCode(postalCode){
+        if(/^[A-Z]\d[A-Z]\s\d[A-Z]\d$/.test(postalCode)){
+            return true
+        }
+        else{
+            return true
+        }
+    }
+
+    function checkPassportNumber (passportNumber){
+        if(/^[A-Z]{3}\d{5}[A-Z]{2}$/.test(passportNumber)){
+            return true
+        }
+        else{
+            return true
+        }
+    }
+
+    function checkFormIfCitizen(){
+        if (isFirstNameValid && isLastNameValid && isEmailValid && isDateOfBirthValid && isSINValid && isStreetAddressValid && isPostalCodeValid){
+            return true
+        }
+        
+        else{
+            return true
+        }
+    }
+
+
+    
+    function checkFormIfNotCitizen(){
+
+        isFormValid = isFirstNameValid && isLastNameValid && isEmailValid && isDateOfBirthValid && isPassportNumberValid
+
+        if (isFirstNameValid && isLastNameValid && isEmailValid && isDateOfBirthValid && isPassportNumberValid){
+            return true
+        }
+        
+        else{
+            return true
+        }
+    }
+
+
+
+    function changeSignUpButtonStatus(){
+        if(checkFormIfCitizen()){
+                $("#signUp").removeAttr('disabled')
+        }
+
+            else{
+                $("#signUp").attr('disabled', true)
+        }
+    }
+
+    function changeSignUpButtonNonCitizen(){
+        if(isFormValid){
+            $("#signUp").removeAttr('disabled')
+        }
+        else{
+            $("#signUp").attr('disabled', true)
+        }
+    }
+
+</script>
+
+</html>

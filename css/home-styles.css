@@ -1,0 +1,181 @@
+body{
+    background-color: rgb(255, 167, 167);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+    height: 100vh;
+}
+
+.img{
+    margin-right: 500px;
+}
+
+.divider{
+    height: 100vh;
+    width: 50px;
+}
+
+.overlay{
+    color: white;
+}
+
+.morph{
+    fill: transparent;
+    stroke: white;
+}
+
+.hero-video{
+    min-height: 100vh;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Styles for music block */
+
+@font-face {
+  font-family: Disktopia;
+  src: url(/fonts/DiskopiaLines-w14J6.ttf);
+}
+
+body{
+  background-color: #13111A;
+  background-image: url(/images/MusicmusicBG.png);
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 48
+}
+
+.border-white{
+  border: 1px solid white;
+}
+
+.glass-container{
+  width: 1000px;
+  height: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.021);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 20px 20px 40px 1px #00000027; 
+  box-shadow: 20px 20px 40px 1px #00000027;
+}
+
+.album-cover{
+  /* border: 1px solid green; */
+  width: 450px;
+  height: 450px;
+  border-radius: 30px 0 0 30px;
+  background-image: url(/images/album\ 1.png);
+  background-size: 105%;
+}
+
+.album-cover-2{
+width: 450px;
+height: 450px;
+border-radius: 30px 0 0 30px;
+background-image: url(/images/Screenshot\ 2023-02-18\ 145249.png);
+background-size: 105%;
+}
+
+.album-details-wrap{
+  width: 548px;
+  height: 450px;
+  /* border: 1px solid rgba(255, 255, 255, 0.123); */
+  border-radius: 0 30px 30px 0;
+  padding: 75px;
+}
+
+.album-title{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e1e1e1;
+  font-family: Disktopia;
+  font-size: 70px;
+  /* border: 1px solid white; */
+  cursor: default;
+}
+
+.album-track{
+  color: #e1e1e1 ;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.album-track:hover{
+  background-color: #9393933b ;
+  transition: ease 0.2s;
+}
+
+.play-btn{
+  margin-right: 15px;
+}
+
+.streaming-icons-wrap img{
+width: 10%;
+object-fit: contain;
+margin-left: 10px;
+}
+
+.streaming-icons-wrap{
+margin-top: 70px;
+}
+
+
+@media only screen and (max-width: 576px) {
+.glass-container {
+  width: 350px;
+  height: 580px;
+}
+
+.album-cover, .album-cover-2{
+  border-radius: 30px 30px 0 0;
+  height: 350px;
+  width: 349px;
+}
+
+.album-details-wrap{
+  width: 350px;
+  height: 150px;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.album-title{
+  font-size: 63px;
+}
+
+.album-track{
+  font-size: 14px;
+  padding: 5px;
+}
+
+.streaming-icons-wrap img{
+  width: 10%;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.streaming-icons-wrap{
+  margin-top: 25px;
+  margin-right: 15px;
+
+}
+}
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/home-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="hero-video">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="/homeVideo.mp4" type="video/mp4">
+        </video>
+
+        <div class="all-wrapper d-flex justify-content-end align-items-center">
+            <div class="home-nav text-end fw-bold text-white">
+                <p class="my-5" id="about">ABOUT</p>
+                <p class="my-5 mr-2" id="booking">BOOKING</p>
+                <img src="/images/MikeSmooth Logo.png" width="12%" height="12%" alt="" class="smooth-logo">
+                <p class="my-5 mr-2" id="music">MUSIC</p>
+                <p class="my-5" id="tour">TOUR</p>
+            </div>
+            <div class="divider"></div>
+            
+            <div class="wrap text-end">
+                <svg id="overlay" height="100%" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 1076" preserveAspectRation = "none">
+                <path id="morph" class="morph" d="M 306.4 0.39 C 203.54 84.62 126.45 174.39 75.38 266.97 C 58.36 297.83 44.23 329 33 360.38 C 21.77 391.76 14.27 420.25 8.85 450.38 C 3.59 479.64 0.81 509 0.52 538.38 C 0.22 569.06 2.63 599.76 7.77 630.38 C 12.82 660.48 20.51 690.51 30.84 720.38 C 41.17 750.25 54.41 780.6 70.26 810.38 C 119.93 903.75 196.22 994.67 299.4 1080.38
+                "/>
+                </svg>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center overflow-hidden my-5">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center my-5">
+                <div class="row glass-container g-0">
+                    <div class="col-xs-12 col-md-12 col-lg-6 album-cover"></div>
+        
+                    <div class="col-xs-12 col-md-12 col-lg-6 album-details-wrap align-items-center justify-content-center">
+                        <div class="album-details ">
+                            <div class="wrap">
+                                <span class="album-title" id="album-title">YOUR ARMS</span>
+                            </div>
+            
+                            <div class="wrap ">
+                                <div class="album-track d-flex album-track-1" id="album-track-1">
+                                    <span class="material-symbols-outlined play-btn opacity-0 track-1-btn" id="track-1-btn">play_arrow</span>
+                                    <a>1. Your Arms</a>
+                                </div>
+                                <div class="album-track d-flex album-track-2" id="album-track-2">
+                                    <span class="material-symbols-outlined play-btn opacity-0 track-2-btn" id="track-2-btn">play_arrow</span>
+                                    <a>2. Mean it</a>
+                                </div>
+                                <div class="album-track d-flex album-track-3" id="album-track-3">
+                                    <span class="material-symbols-outlined play-btn opacity-0 track-3-btn" id="track-3-btn">play_arrow</span>
+                                    <a>3. What Do You Mean?</a>
+                                </div>
+                            </div>
+        
+                            <div class="streaming-icons-wrap text-end ">
+                                <a href="http://www.spotify.com" target="_blank"><img class="streaming-icon" src="/images/spotify.png" alt=""></a>
+                                <a href="https://music.apple.com/us/browse" target="_blank"><img class="streaming-icon" src="/images/appleMusic.png" alt=""></a>
+                                <a href="https://tidal.com/" target="_blank"><img class="streaming-icon" src="/images/tidal.png" alt=""></a>
+                                <a href="https://bandcamp.com/" target="_blank"><img class="streaming-icon" src="/images/shopping cart.png" alt=""></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+</body>
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $(".smooth-logo").mouseenter(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 367 0.39 C 264.15 84.62 187.05 174.39 135.99 266.97 C 118.97 297.83 104.84 329 93.61 360.38 C 82.38 391.76 74.88 420.25 69.46 450.38 C 64.2 479.64 0.79 510.51 0.5 539.88 C 0.2 570.56 63.24 599.75 68.38 630.38 C 73.43 660.48 81.12 690.51 91.45 720.38 C 101.78 750.25 115.02 780.6 130.87 810.38 C 180.54 903.75 256.83 994.67 360.01 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $(".smooth-logo").mouseleave(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 306.4 0.39 C 203.54 84.62 126.45 174.39 75.38 266.97 C 58.36 297.83 44.23 329 33 360.38 C 21.77 391.76 14.27 420.25 8.85 450.38 C 3.59 479.64 0.81 509 0.52 538.38 C 0.22 569.06 2.63 599.76 7.77 630.38 C 12.82 660.48 20.51 690.51 30.84 720.38 C 41.17 750.25 54.41 780.6 70.26 810.38 C 119.93 903.75 196.22 994.67 299.4 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#booking").mouseenter(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 368.29 0.39 C 265.44 84.62 188.34 174.39 137.28 266.97 C 120.26 297.83 106.13 329 94.9 360.38 C 83.67 391.76 6.21 399.75 0.79 429.89 C -4.47 459.15 62.71 509.01 62.42 538.39 C 62.12 569.07 64.53 599.77 69.67 630.39 C 74.72 660.49 82.41 690.52 92.74 720.39 C 103.07 750.26 116.31 780.61 132.16 810.39 C 181.83 903.76 258.12 994.68 361.3 1080.39"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#booking").mouseleave(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 306.4 0.39 C 203.54 84.62 126.45 174.39 75.38 266.97 C 58.36 297.83 44.23 329 33 360.38 C 21.77 391.76 14.27 420.25 8.85 450.38 C 3.59 479.64 0.81 509 0.52 538.38 C 0.22 569.06 2.63 599.76 7.77 630.38 C 12.82 660.48 20.51 690.51 30.84 720.38 C 41.17 750.25 54.41 780.6 70.26 810.38 C 119.93 903.75 196.22 994.67 299.4 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#about").mouseenter(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 339.36 0.39 C 236.51 84.62 159.41 174.39 108.35 266.97 C 91.33 297.83 13.09 310.5 1.86 341.89 C -9.37 373.28 47.24 420.26 41.82 450.39 C 36.56 479.65 33.78 509.01 33.49 538.39 C 33.19 569.07 35.6 599.77 40.74 630.39 C 45.79 660.49 53.48 690.52 63.81 720.39 C 74.14 750.26 87.38 780.61 103.23 810.39 C 152.9 903.76 229.19 994.68 332.37 1080.39"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#about").mouseleave(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 306.4 0.39 C 203.54 84.62 126.45 174.39 75.38 266.97 C 58.36 297.83 44.23 329 33 360.38 C 21.77 391.76 14.27 420.25 8.85 450.38 C 3.59 479.64 0.81 509 0.52 538.38 C 0.22 569.06 2.63 599.76 7.77 630.38 C 12.82 660.48 20.51 690.51 30.84 720.38 C 41.17 750.25 54.41 780.6 70.26 810.38 C 119.93 903.75 196.22 994.67 299.4 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#music").mouseenter(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 368.28 0.39 C 265.43 84.62 188.33 174.39 137.27 266.97 C 120.25 297.83 106.12 329 94.89 360.38 C 83.66 391.76 76.16 420.25 70.74 450.38 C 65.48 479.64 62.7 509 62.41 538.38 C 62.11 569.06 -4.36 621.26 0.78 651.88 C 5.83 681.98 82.4 690.51 92.73 720.38 C 103.06 750.25 116.3 780.6 132.15 810.38 C 181.82 903.75 258.11 994.67 361.29 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#music").mouseleave(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 306.4 0.39 C 203.54 84.62 126.45 174.39 75.38 266.97 C 58.36 297.83 44.23 329 33 360.38 C 21.77 391.76 14.27 420.25 8.85 450.38 C 3.59 479.64 0.81 509 0.52 538.38 C 0.22 569.06 2.63 599.76 7.77 630.38 C 12.82 660.48 20.51 690.51 30.84 720.38 C 41.17 750.25 54.41 780.6 70.26 810.38 C 119.93 903.75 196.22 994.67 299.4 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#tour").mouseenter(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 345.19 0.39 C 242.34 84.62 165.24 174.39 114.18 266.97 C 97.16 297.83 83.03 329 71.8 360.38 C 60.57 391.76 53.07 420.25 47.65 450.38 C 42.39 479.64 39.61 509 39.32 538.38 C 39.02 569.06 41.43 599.76 46.57 630.38 C 51.62 660.48 -8.64 706.01 1.69 735.88 C 12.02 765.75 93.21 780.6 109.05 810.38 C 158.72 903.75 235.01 994.67 338.19 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+        $("#tour").mouseleave(function(){
+            var overlay = document.getElementById('morph')
+            var morphing = anime({
+                targets:".morph",
+                d: [   
+                // Home
+                {value:"M 306.4 0.39 C 203.54 84.62 126.45 174.39 75.38 266.97 C 58.36 297.83 44.23 329 33 360.38 C 21.77 391.76 14.27 420.25 8.85 450.38 C 3.59 479.64 0.81 509 0.52 538.38 C 0.22 569.06 2.63 599.76 7.77 630.38 C 12.82 660.48 20.51 690.51 30.84 720.38 C 41.17 750.25 54.41 780.6 70.26 810.38 C 119.93 903.75 196.22 994.67 299.4 1080.38"},
+            ],
+            easing: "easeInOutSine",
+            loop: false,
+            duration: 200
+            })
+        })
+
+
+        // Music Block Script
+        $(".album-track-1").mouseenter(function(){
+            $(".track-1-btn").removeClass("opacity-0")
+            $(".track-1-btn").addClass("opacity-100")
+        })
+
+        $(".album-track-1").mouseleave(function(){
+            $(".track-1-btn").removeClass("opacity-100")
+            $(".track-1-btn").addClass("opacity-0")
+        })
+
+        $(".album-track-2").mouseenter(function(){
+            $(".track-2-btn").removeClass("opacity-0")
+            $(".track-2-btn").addClass("opacity-100")
+        })
+
+        $(".album-track-2").mouseleave(function(){
+            $(".track-2-btn").removeClass("opacity-100")
+            $(".track-2-btn").addClass("opacity-0")
+        })
+
+        $(".album-track-3").mouseenter(function(){
+            $(".track-3-btn").removeClass("opacity-0")
+            $(".track-3-btn").addClass("opacity-100")
+        })
+
+        $(".album-track-3").mouseleave(function(){
+            $(".track-3-btn").removeClass("opacity-100")
+            $(".track-3-btn").addClass("opacity-0")
+        })
+
+    
+
+        $(".track-1-btn").click(function(){
+            
+            $(this).text("pause")
+        })
+
+        $(".track-2-btn").click(function(){
+            $(this).text("pause")
+        })
+
+        $(".track-3-btn").click(function(){
+            $(this).text("pause")
+        })
+
+
+        if($(window).width() <= 576) {
+            $(".album-track-1").removeClass("opacity-0")
+            $(".track-1-btn").addClass("opacity-100")
+
+            $(".album-track-2").removeClass("opacity-0")
+            $(".track-2-btn").addClass("opacity-100")
+
+            $(".album-track-3").removeClass("opacity-0")
+            $(".track-3-btn").addClass("opacity-100")
+
+            $(".album-title").addClass('d-none')
+        }
+        else{
+            x=x
+        }
+
+    })
+</script>
+
+</html>

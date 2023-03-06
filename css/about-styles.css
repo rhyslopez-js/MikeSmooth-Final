@@ -1,0 +1,164 @@
+
+
+
+body{
+    /* background-image: url(/images/About.png); */
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.block-wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+
+.mike-smooth-1{
+    background-image: url(/images/Untitled-1.png);
+    background-position-x: 35% ;
+    /* mix-blend-mode: exclusion; */
+    opacity: 75%;
+}
+
+.glass-col{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.glass-container{
+    width: 860px;
+    height: 500px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #9b9b9b0e;
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.188);
+    box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.123);
+}
+
+.social-icons-wrap img{
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.block-wrapper-2{
+    height: 80vh;
+    width: 100vw;
+}
+
+.mike-smooth-2{
+    background-image: url(/images/Untitled-2.png);
+    opacity: 75%;
+    background-position-x: 90%;
+    background-size: 150%;
+}
+
+.glass-col-2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.glass-container-2{
+    width: 750px;
+    height: 450px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #9b9b9b0e;
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.188);
+    box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.123);
+    margin-left: 10px;
+}
+
+.block-wrapper-3{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mikes-mission .text-box{
+    width: 500px;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .all-wrap{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .block-wrapper{
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding-bottom: 100px!important;
+    }
+    .glass-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mike-smooth-1{
+        display: none;
+    }
+
+    .glass-container{
+        width: 350px;
+        height: 500px;
+        background-color: transparent;
+        backdrop-filter: blur(0);
+        border: none;
+        box-shadow: none;
+    }
+
+    .text-box{
+        text-align: center;
+    }
+
+    .mike-smooth-logo{
+        width: 250px!important;
+    }
+
+    .social-icons-wrap{
+        text-align: center;
+    }
+
+    .mike-smooth-2{
+        display: none;
+    }
+
+    .glass-col-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glass-container-2{
+
+        height: 500px;
+        background-color: transparent;
+        backdrop-filter: blur(0);
+        border: none;
+        box-shadow: none;
+        margin-left: 0;
+    }
+
+    .mikes-mission .text-box{
+        width: 275px;    
+    }
+  }
+
